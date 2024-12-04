@@ -1,0 +1,241 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c34;
+  padding: 10px 20px;
+  color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-secondary {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #21a1f1;
+}
+
+.hero {
+  margin-top: 80px;
+  background-color: #0066cc;
+  color: white;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e6b800;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #0066cc;
+}
+
+.container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.how-it-works {
+  background-color: #ffffff;
+  padding: 50px 20px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex-basis: 22%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  font-size: 2em;
+  color: #0066cc;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.benefits {
+  background-color: #0066cc;
+  color: white;
+  padding: 50px 20px;
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.benefits li::before {
+  content: '✔';
+  color: #ffcc00;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  font-size: 1em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-content, .hero-image {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .steps {
+    flex-direction: column;
+  }
+
+  .step {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .header {
+    flex-direction: column;
+  }
+
+  .auth-buttons {
+    margin-top: 10px;
+  }
+}
+
+.insurance-type-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.insurance-type-container h2 {
+  margin-bottom: 20px;
+}
+
+.insurance-type-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.insurance-type-buttons .btn {
+  flex-basis: 48%;
+  margin-bottom: 20px;
+}
